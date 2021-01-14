@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "jwtSecret": "course practice secret",
+  "mongoUri": "mongodb+srv://dino:134689@cluster0.nyn1m.mongodb.net/app?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
+}

@@ -1,0 +1,26 @@
+import React from 'react';
+
+export const LinkCard = ({ link }) => (
+  <>
+    <h2>Link</h2>
+
+    <p>Your link: &nbsp;
+      <a href={link.to} 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {link.to}
+      </a>
+    </p>
+    <p>From: &nbsp;
+      <a href={link.from} 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {link.from}
+      </a>
+    </p>
+    <p>opened <strong>{link.clicks}</strong> times</p>
+    <p>created: <strong>{new Date(link.date).toLocaleDateString()}</strong></p>
+  </>
+);
